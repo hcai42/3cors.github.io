@@ -29,15 +29,19 @@
         <span>3cors</span>
       </a>
       <div class="nav-links">
-        <a href="#cores">Three Cores</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#platform">Platform</a>
-        <a href="#principles">Principles</a>
-        <a href="#contact">Contact</a>
+        <a href="#cores" data-i18n="nav.cores">Three Cores</a>
+        <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+        <a href="#platform" data-i18n="nav.platform">Platform</a>
+        <a href="#principles" data-i18n="nav.principles">Principles</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button id="lang-toggle" class="lang-toggle">DE</button>
       </div>
-      <button class="nav-toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right-mobile">
+        <button id="lang-toggle-mobile" class="lang-toggle" onclick="document.getElementById('lang-toggle').click()">DE</button>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -45,12 +49,12 @@
   <section class="hero">
     <div class="grid-bg"></div>
     <div class="hero-content">
-      <div class="hero-badge">Built on Open Source &middot; Self-Hosted &middot; GDPR-Ready</div>
-      <h1>You Own It.</h1>
-      <p class="hero-sub">An AI platform built entirely on open-source technology.<br>Three Cores. Full sovereignty. Zero lock-in.</p>
+      <div class="hero-badge" data-i18n="hero.badge">Built on Open Source &middot; Self-Hosted &middot; GDPR-Ready</div>
+      <h1 data-i18n="hero.title">You Own It.</h1>
+      <p class="hero-sub" data-i18n="hero.sub">An AI platform built entirely on open-source technology.<br>Three Cores. Full sovereignty. Zero lock-in.</p>
       <div class="hero-actions">
-        <a href="#cores" class="btn btn-primary">Explore the Framework</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        <a href="#cores" class="btn btn-primary" data-i18n="hero.cta1">Explore the Framework</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -58,29 +62,29 @@
   <!-- Three Cores -->
   <section id="cores" class="section">
     <div class="container">
-      <h2 class="section-title">Three Cores</h2>
-      <p class="section-sub">Every AI application needs three things done right. We made them first-class citizens.</p>
+      <h2 class="section-title" data-i18n="cores.title">Three Cores</h2>
+      <p class="section-sub" data-i18n="cores.sub">Every AI application needs three things done right. We made them first-class citizens.</p>
       <div class="cores-grid">
         <div class="card">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5v1h-4v-1A4 4 0 0 1 12 2z"/><path d="M10 10.5v2.5h4v-2.5"/><path d="M10 15h4"/><path d="M11 15v2"/><path d="M13 15v2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7 19h3"/><path d="M14 19h3"/></svg>
           </div>
-          <h3>Intelligence</h3>
-          <p>Swap LLM providers freely via LiteLLM. 100+ providers supported. No vendor lock-in. Use the model that fits your task and budget.</p>
+          <h3 data-i18n="cores.intelligence">Intelligence</h3>
+          <p data-i18n="cores.intelligence.desc">Swap LLM providers freely via LiteLLM. 100+ providers supported. No vendor lock-in. Use the model that fits your task and budget.</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4"/><path d="M6.5 10v4"/><path d="M17.5 10v4"/><path d="M10 17.5h4"/></svg>
           </div>
-          <h3>Memory</h3>
-          <p>Your data, your rules. Full CRUD, one-click export, real deletion. Event-sourced history. Runs on your infrastructure with complete data sovereignty.</p>
+          <h3 data-i18n="cores.memory">Memory</h3>
+          <p data-i18n="cores.memory.desc">Your data, your rules. Full CRUD, one-click export, real deletion. Event-sourced history. Runs on your infrastructure with complete data sovereignty.</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><circle cx="12" cy="12" r="6"/><path d="M12 8v4l2 2"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
           </div>
-          <h3>Billing</h3>
-          <p>Hard budget limits. Pre-debit token reservation. No surprise costs. Complete audit trail per agent, workflow, and user.</p>
+          <h3 data-i18n="cores.billing">Billing</h3>
+          <p data-i18n="cores.billing.desc">Hard budget limits. Pre-debit token reservation. No surprise costs. Complete audit trail per agent, workflow, and user.</p>
         </div>
       </div>
     </div>
@@ -89,32 +93,32 @@
   <!-- Platform -->
   <section id="platform" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">The Platform</h2>
-      <p class="section-sub">A deterministic foundation with AI as a managed tenant, not the other way around.</p>
+      <h2 class="section-title" data-i18n="platform.title">The Platform</h2>
+      <p class="section-sub" data-i18n="platform.sub">A deterministic foundation with AI as a managed tenant, not the other way around.</p>
       <div class="features-grid">
         <div class="feature">
-          <div class="feature-label">Architecture</div>
-          <p>Microservice-based. Each service is independently deployable. Schema-validated inputs and outputs. Event-sourced state. ACID guarantees.</p>
+          <div class="feature-label" data-i18n="platform.architecture">Architecture</div>
+          <p data-i18n="platform.architecture.desc">Microservice-based. Each service is independently deployable. Schema-validated inputs and outputs. Event-sourced state. ACID guarantees.</p>
         </div>
         <div class="feature">
-          <div class="feature-label">Deployment</div>
-          <p>Self-hosted via Docker Compose. Runs on any Linux VPS. 30+ containers orchestrated. Cloudflare Tunnel for secure access.</p>
+          <div class="feature-label" data-i18n="platform.deployment">Deployment</div>
+          <p data-i18n="platform.deployment.desc">Self-hosted via Docker Compose. Runs on any Linux VPS. 30+ containers orchestrated. Cloudflare Tunnel for secure access.</p>
         </div>
         <div class="feature">
-          <div class="feature-label">Auth &amp; Security</div>
-          <p>Keycloak OIDC, SSO Portal, Row-Level Security on all tables. JWT tokens, httpOnly cookies. 100% audit coverage for admin actions.</p>
+          <div class="feature-label" data-i18n="platform.auth">Auth &amp; Security</div>
+          <p data-i18n="platform.auth.desc">Keycloak OIDC, SSO Portal, Row-Level Security on all tables. JWT tokens, httpOnly cookies. 100% audit coverage for admin actions.</p>
         </div>
         <div class="feature">
-          <div class="feature-label">Tech Stack</div>
+          <div class="feature-label" data-i18n="platform.tech">Tech Stack</div>
           <p class="mono">FastAPI &middot; React 18 &middot; TypeScript &middot; PostgreSQL &middot; Redis 7 &middot; Neo4j &middot; LiteLLM &middot; Supabase &middot; Pydantic v2</p>
         </div>
         <div class="feature">
-          <div class="feature-label">Services</div>
-          <p>Foundation (Billing &amp; LLM Gateway), Interviewer (AI Conversations), CorIM Builder (Spec Wizard), Auth Gateway (SSO Portal).</p>
+          <div class="feature-label" data-i18n="platform.services">Services</div>
+          <p data-i18n="platform.services.desc">Foundation (Billing &amp; LLM Gateway), Interviewer (AI Conversations), CorIM Builder (Spec Wizard), Auth Gateway (SSO Portal).</p>
         </div>
         <div class="feature">
-          <div class="feature-label">Open-Source-Based</div>
-          <p>Built entirely on proven open-source technology. No proprietary black boxes in the stack. Vendor-independent by design.</p>
+          <div class="feature-label" data-i18n="platform.oss">Open-Source-Based</div>
+          <p data-i18n="platform.oss.desc">Built entirely on proven open-source technology. No proprietary black boxes in the stack. Vendor-independent by design.</p>
         </div>
       </div>
     </div>
@@ -123,89 +127,89 @@
   <!-- Principles -->
   <section id="principles" class="section">
     <div class="container">
-      <h2 class="section-title">Principles</h2>
+      <h2 class="section-title" data-i18n="principles.title">Principles</h2>
       <div class="principles-list">
         <div class="principle">
           <span class="principle-num">01</span>
           <div>
-            <h4>Data Sovereignty</h4>
-            <p>Full export, real deletion, audit trails. Your data never leaves your control. GDPR-compliant by design, not by afterthought.</p>
+            <h4 data-i18n="principles.sovereignty">Data Sovereignty</h4>
+            <p data-i18n="principles.sovereignty.desc">Full export, real deletion, audit trails. Your data never leaves your control. GDPR-compliant by design, not by afterthought.</p>
           </div>
         </div>
         <div class="principle">
           <span class="principle-num">02</span>
           <div>
-            <h4>Cost Transparency</h4>
-            <p>Every token is accounted for. Pre-debit ensures you never exceed your budget. Exact cost attribution per operation.</p>
+            <h4 data-i18n="principles.cost">Cost Transparency</h4>
+            <p data-i18n="principles.cost.desc">Every token is accounted for. Pre-debit ensures you never exceed your budget. Exact cost attribution per operation.</p>
           </div>
         </div>
         <div class="principle">
           <span class="principle-num">03</span>
           <div>
-            <h4>Vendor Independence</h4>
-            <p>LLM, storage, auth: all swappable. No single provider dependency. Your application survives any vendor decision.</p>
+            <h4 data-i18n="principles.vendor">Vendor Independence</h4>
+            <p data-i18n="principles.vendor.desc">LLM, storage, auth: all swappable. No single provider dependency. Your application survives any vendor decision.</p>
           </div>
         </div>
         <div class="principle">
           <span class="principle-num">04</span>
           <div>
-            <h4>Deterministic Foundation</h4>
-            <p>AI operates within deterministic rules. Schema-validated, event-sourced, ACID-backed. Predictable behavior, auditable outcomes.</p>
+            <h4 data-i18n="principles.deterministic">Deterministic Foundation</h4>
+            <p data-i18n="principles.deterministic.desc">AI operates within deterministic rules. Schema-validated, event-sourced, ACID-backed. Predictable behavior, auditable outcomes.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  
+
   <!-- Solutions -->
   <section id="solutions" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Solutions</h2>
-      <p class="section-sub">How organisations can use 3cors to bring AI into their business. Safely and on their own terms.</p>
+      <h2 class="section-title" data-i18n="solutions.title">Solutions</h2>
+      <p class="section-sub" data-i18n="solutions.sub">How organisations can use 3cors to bring AI into their business. Safely and on their own terms.</p>
       <div class="solutions-grid">
         <div class="solution-card">
           <div class="solution-num">01</div>
-          <h3>Intelligent Document Processing</h3>
-          <p>Turn unstructured information (contracts, manuals, reports) into structured, searchable knowledge. Ask questions in natural language and get relevant answers from your own data.</p>
-          <div class="solution-benefit">
+          <h3 data-i18n="solutions.1.title">Intelligent Document Processing</h3>
+          <p data-i18n="solutions.1.desc">Turn unstructured information (contracts, manuals, reports) into structured, searchable knowledge. Ask questions in natural language and get relevant answers from your own data.</p>
+          <div class="solution-benefit" data-i18n="solutions.1.benefit">
             <strong>Key benefit:</strong> Sensitive documents can remain on your own servers. No data needs to leave your organisation.
           </div>
         </div>
         <div class="solution-card">
           <div class="solution-num">02</div>
-          <h3>AI for Regulated Industries</h3>
-          <p>Finance, insurance, healthcare, and public sector organisations often cannot use cloud-based AI services. 3cors is designed to run on your own infrastructure, helping you meet regulatory requirements.</p>
-          <div class="solution-benefit">
+          <h3 data-i18n="solutions.2.title">AI for Regulated Industries</h3>
+          <p data-i18n="solutions.2.desc">Finance, insurance, healthcare, and public sector organisations often cannot use cloud-based AI services. 3cors is designed to run on your own infrastructure, helping you meet regulatory requirements.</p>
+          <div class="solution-benefit" data-i18n="solutions.2.benefit">
             <strong>Key benefit:</strong> Designed with European data protection regulations in mind. Full audit trails for every operation.
           </div>
         </div>
         <div class="solution-card">
           <div class="solution-num">03</div>
-          <h3>AI Cost Management</h3>
-          <p>Many organisations struggle with unpredictable AI costs. 3cors provides built-in budget controls that help prevent unexpected charges, with clear reporting on what each task costs.</p>
-          <div class="solution-benefit">
+          <h3 data-i18n="solutions.3.title">AI Cost Management</h3>
+          <p data-i18n="solutions.3.desc">Many organisations struggle with unpredictable AI costs. 3cors provides built-in budget controls that help prevent unexpected charges, with clear reporting on what each task costs.</p>
+          <div class="solution-benefit" data-i18n="solutions.3.benefit">
             <strong>Key benefit:</strong> Set budget limits per team or project. Costs are reserved before each operation runs.
           </div>
         </div>
         <div class="solution-card">
           <div class="solution-num">04</div>
-          <h3>AI Evaluation &amp; Prototyping</h3>
-          <p>Explore different AI approaches without committing to a single provider. Compare results, switch between providers at any time, and find the right fit for your use case.</p>
-          <div class="solution-benefit">
+          <h3 data-i18n="solutions.4.title">AI Evaluation &amp; Prototyping</h3>
+          <p data-i18n="solutions.4.desc">Explore different AI approaches without committing to a single provider. Compare results, switch between providers at any time, and find the right fit for your use case.</p>
+          <div class="solution-benefit" data-i18n="solutions.4.benefit">
             <strong>Key benefit:</strong> No long-term commitments. Switch or combine AI providers as your needs evolve.
           </div>
         </div>
         <div class="solution-card">
           <div class="solution-num">05</div>
-          <h3>AI Backend for Software Providers</h3>
-          <p>Software companies looking to add AI capabilities to their products can use 3cors as a backend layer. It handles user management, billing, and AI integration so they can focus on their core product.</p>
-          <div class="solution-benefit">
+          <h3 data-i18n="solutions.5.title">AI Backend for Software Providers</h3>
+          <p data-i18n="solutions.5.desc">Software companies looking to add AI capabilities to their products can use 3cors as a backend layer. It handles user management, billing, and AI integration so they can focus on their core product.</p>
+          <div class="solution-benefit" data-i18n="solutions.5.benefit">
             <strong>Key benefit:</strong> Core infrastructure is ready to use, allowing faster time to market for AI-powered features.
           </div>
         </div>
       </div>
-      <div class="solutions-cta">
+      <div class="solutions-cta" data-i18n="solutions.cta">
         <p>Every organisation has different needs. <a href="#contact">Get in touch</a> to discuss how 3cors can support your specific requirements.</p>
       </div>
     </div>
@@ -214,8 +218,8 @@
   <!-- Contact -->
   <section id="contact" class="section">
     <div class="container contact-section">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-sub">Interested in 3cors? We're looking for early adopters and partners.</p>
+      <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+      <p class="section-sub" data-i18n="contact.sub">Interested in 3cors? We're looking for early adopters and partners.</p>
       <a href="mailto:info@hcai42.com" class="btn btn-primary">info@hcai42.com</a>
     </div>
   </section>
@@ -225,7 +229,7 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <img src="assets/logo.png" alt="3cors" width="28" height="28">
-        <span>&copy; 2026 HCAI42. All rights reserved.</span>
+        <span data-i18n="footer.copy">&copy; 2026 HCAI42. All rights reserved.</span>
       </div>
       <div class="footer-links">
         <a href="impressum.html">Impressum</a>
@@ -234,6 +238,7 @@
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script>
     // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
@@ -265,6 +270,15 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
     });
+
+    // Sync mobile lang toggle label
+    var langBtn = document.getElementById('lang-toggle');
+    var langBtnMobile = document.getElementById('lang-toggle-mobile');
+    if (langBtn && langBtnMobile) {
+      new MutationObserver(function() {
+        langBtnMobile.textContent = langBtn.textContent;
+      }).observe(langBtn, { childList: true });
+    }
   </script>
 </body>
 </html>
