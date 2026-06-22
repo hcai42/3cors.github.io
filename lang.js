@@ -2,6 +2,7 @@
 (function() {
   var t = {
     // Nav
+    'nav.mission': { en: 'Mission', de: 'Leitbild' },
     'nav.cores': { en: 'Three Cores', de: 'Drei Kerne' },
     'nav.solutions': { en: 'Solutions', de: 'Loesungen' },
     'nav.platform': { en: 'Platform', de: 'Plattform' },
@@ -17,6 +18,27 @@
     },
     'hero.cta1': { en: 'Explore the Framework', de: 'Framework entdecken' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
+
+    // Mission / Leitbild
+    'mission.title': { en: 'Our Mission', de: 'Unser Leitbild' },
+    'mission.lead': {
+      en: '<strong>You Own It.</strong> We build AI software that belongs to the people who use it. Not to us, not to a cloud provider, not to a model.',
+      de: '<strong>Du bestimmst.</strong> Wir bauen KI-Software, die den Menschen gehoert, die sie nutzen. Nicht uns, keinem Cloud-Anbieter, keinem Modell.'
+    },
+    'mission.mandate': { en: 'Our Mandate', de: 'Unser Auftrag' },
+    'mission.mandate.desc': {
+      en: 'We give organisations back control over their AI. Software they can own, understand, and leave at any time. Data sovereignty is the foundation, not an add-on.',
+      de: 'Wir geben Unternehmen die Kontrolle ueber ihre KI zurueck. Software, die sie besitzen, verstehen und jederzeit verlassen koennen. Datensouveraenitaet ist das Fundament, kein Zusatz.'
+    },
+    'mission.vision': { en: 'Our Vision', de: 'Unsere Vision' },
+    'mission.vision.desc': {
+      en: 'A future where organisations use AI without making themselves dependent. We are the proof that powerful AI and full sovereignty are not a contradiction.',
+      de: 'Eine Zukunft, in der Unternehmen KI nutzen, ohne sich abhaengig zu machen. Wir sind der Beweis, dass leistungsfaehige KI und volle Souveraenitaet kein Widerspruch sind.'
+    },
+    'mission.measure': {
+      en: '<strong>Our measure:</strong> has the organisation that uses our software gained more control, more clarity, and more time for what matters? If yes, we have done our job well.',
+      de: '<strong>Unser Massstab:</strong> Hat das Unternehmen, das unsere Software nutzt, mehr Kontrolle, mehr Klarheit und mehr Zeit fuer das Wesentliche gewonnen? Wenn ja, haben wir unsere Arbeit gut gemacht.'
+    },
 
     // Three Cores
     'cores.title': { en: 'Three Cores', de: 'Drei Kerne' },

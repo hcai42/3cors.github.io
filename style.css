@@ -401,6 +401,52 @@ body {
   line-height: 1.6;
 }
 
+/* === Mission / Leitbild === */
+.mission-lead {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.mission-lead strong {
+  color: var(--blue-light);
+  font-weight: 600;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mission-measure {
+  max-width: 760px;
+  margin: 48px auto 0;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.mission-measure strong {
+  color: var(--blue-light);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* === Contact === */
 .contact-section {
   text-align: center;
