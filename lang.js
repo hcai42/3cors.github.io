@@ -3,7 +3,7 @@
   var t = {
     // Nav
     'nav.cores': { en: 'Three Cores', de: 'Drei Kerne' },
-    'nav.solutions': { en: 'Solutions', de: 'Loesungen' },
+    'nav.solutions': { en: 'Solutions', de: 'Lösungen' },
     'nav.platform': { en: 'Platform', de: 'Plattform' },
     'nav.principles': { en: 'Principles', de: 'Prinzipien' },
     'nav.contact': { en: 'Contact', de: 'Kontakt' },
@@ -13,7 +13,7 @@
     'hero.title': { en: 'You Own It.', de: 'Du bestimmst.' },
     'hero.sub': {
       en: 'An AI platform built entirely on open-source technology.<br>Three Cores. Full sovereignty. Zero lock-in.',
-      de: 'Eine KI-Plattform, vollstaendig auf Open-Source-Technologie gebaut.<br>Drei Kerne. Volle Souveraenitaet. Kein Lock-in.'
+      de: 'Eine KI-Plattform, vollständig auf Open-Source-Technologie gebaut.<br>Drei Kerne. Volle Souveränität. Kein Lock-in.'
     },
     'hero.cta1': { en: 'Explore the Framework', de: 'Framework entdecken' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
@@ -27,17 +27,17 @@
     'cores.intelligence': { en: 'Intelligence', de: 'Intelligenz' },
     'cores.intelligence.desc': {
       en: 'Swap LLM providers freely via LiteLLM. 100+ providers supported. No vendor lock-in. Use the model that fits your task and budget.',
-      de: 'LLM-Anbieter frei wechseln via LiteLLM. 100+ Anbieter unterstuetzt. Kein Vendor Lock-in. Nutzen Sie das Modell, das zu Aufgabe und Budget passt.'
+      de: 'LLM-Anbieter frei wechseln via LiteLLM. 100+ Anbieter unterstützt. Kein Vendor Lock-in. Nutzen Sie das Modell, das zu Aufgabe und Budget passt.'
     },
     'cores.memory': { en: 'Memory', de: 'Memory' },
     'cores.memory.desc': {
       en: 'Your data, your rules. Full CRUD, one-click export, real deletion. Event-sourced history. Runs on your infrastructure with complete data sovereignty.',
-      de: 'Ihre Daten, Ihre Regeln. Volles CRUD, Ein-Klick-Export, echtes Loeschen. Event-Sourced History. Laeuft auf Ihrer Infrastruktur mit vollstaendiger Datensouveraenitaet.'
+      de: 'Ihre Daten, Ihre Regeln. Volles CRUD, Ein-Klick-Export, echtes Löschen. Event-Sourced History. Läuft auf Ihrer Infrastruktur mit vollständiger Datensouveränität.'
     },
     'cores.billing': { en: 'Billing', de: 'Billing' },
     'cores.billing.desc': {
       en: 'Hard budget limits. Pre-debit token reservation. No surprise costs. Complete audit trail per agent, workflow, and user.',
-      de: 'Harte Budgetgrenzen. Pre-Debit Token-Reservierung. Keine ueberraschenden Kosten. Vollstaendiger Audit-Trail pro Agent, Workflow und Benutzer.'
+      de: 'Harte Budgetgrenzen. Pre-Debit Token-Reservierung. Keine überraschenden Kosten. Vollständiger Audit-Trail pro Agent, Workflow und Benutzer.'
     },
 
     // Platform
@@ -49,17 +49,17 @@
     'platform.architecture': { en: 'Architecture', de: 'Architektur' },
     'platform.architecture.desc': {
       en: 'Microservice-based. Each service is independently deployable. Schema-validated inputs and outputs. Event-sourced state. ACID guarantees.',
-      de: 'Microservice-basiert. Jeder Service ist unabhaengig deploybar. Schema-validierte Ein- und Ausgaben. Event-Sourced State. ACID-Garantien.'
+      de: 'Microservice-basiert. Jeder Service ist unabhängig deploybar. Schema-validierte Ein- und Ausgaben. Event-Sourced State. ACID-Garantien.'
     },
     'platform.deployment': { en: 'Deployment', de: 'Deployment' },
     'platform.deployment.desc': {
       en: 'Self-hosted via Docker Compose. Runs on any Linux VPS. 30+ containers orchestrated. Cloudflare Tunnel for secure access.',
-      de: 'Self-Hosted via Docker Compose. Laeuft auf jedem Linux VPS. 30+ Container orchestriert. Cloudflare Tunnel fuer sicheren Zugriff.'
+      de: 'Self-Hosted via Docker Compose. Läuft auf jedem Linux VPS. 30+ Container orchestriert. Cloudflare Tunnel für sicheren Zugriff.'
     },
     'platform.auth': { en: 'Auth & Security', de: 'Auth & Sicherheit' },
     'platform.auth.desc': {
       en: 'Keycloak OIDC, SSO Portal, Row-Level Security on all tables. JWT tokens, httpOnly cookies. 100% audit coverage for admin actions.',
-      de: 'Keycloak OIDC, SSO-Portal, Row-Level Security auf allen Tabellen. JWT-Tokens, httpOnly-Cookies. 100% Audit-Abdeckung fuer Admin-Aktionen.'
+      de: 'Keycloak OIDC, SSO-Portal, Row-Level Security auf allen Tabellen. JWT-Tokens, httpOnly-Cookies. 100% Audit-Abdeckung für Admin-Aktionen.'
     },
     'platform.tech': { en: 'Tech Stack', de: 'Tech Stack' },
     'platform.services': { en: 'Services', de: 'Services' },
@@ -70,60 +70,60 @@
     'platform.oss': { en: 'Open-Source-Based', de: 'Open-Source-basiert' },
     'platform.oss.desc': {
       en: 'Built entirely on proven open-source technology. No proprietary black boxes in the stack. Vendor-independent by design.',
-      de: 'Vollstaendig auf bewaehrter Open-Source-Technologie gebaut. Keine proprietaeren Black Boxes im Stack. Herstellerunabhaengig by Design.'
+      de: 'Vollständig auf bewährter Open-Source-Technologie gebaut. Keine proprietären Black Boxes im Stack. Herstellerunabhängig by Design.'
     },
 
     // Principles
     'principles.title': { en: 'Principles', de: 'Prinzipien' },
-    'principles.sovereignty': { en: 'Data Sovereignty', de: 'Datensouveraenitaet' },
+    'principles.sovereignty': { en: 'Data Sovereignty', de: 'Datensouveränität' },
     'principles.sovereignty.desc': {
       en: 'Full export, real deletion, audit trails. Your data never leaves your control. GDPR-compliant by design, not by afterthought.',
-      de: 'Vollstaendiger Export, echtes Loeschen, Audit-Trails. Ihre Daten verlassen nie Ihre Kontrolle. DSGVO-konform by Design, nicht nachtraeglich.'
+      de: 'Vollständiger Export, echtes Löschen, Audit-Trails. Ihre Daten verlassen nie Ihre Kontrolle. DSGVO-konform by Design, nicht nachträglich.'
     },
     'principles.cost': { en: 'Cost Transparency', de: 'Kostentransparenz' },
     'principles.cost.desc': {
       en: 'Every token is accounted for. Pre-debit ensures you never exceed your budget. Exact cost attribution per operation.',
-      de: 'Jeder Token wird erfasst. Pre-Debit stellt sicher, dass Sie Ihr Budget nie ueberschreiten. Exakte Kostenzuordnung pro Operation.'
+      de: 'Jeder Token wird erfasst. Pre-Debit stellt sicher, dass Sie Ihr Budget nie überschreiten. Exakte Kostenzuordnung pro Operation.'
     },
-    'principles.vendor': { en: 'Vendor Independence', de: 'Herstellerunabhaengigkeit' },
+    'principles.vendor': { en: 'Vendor Independence', de: 'Herstellerunabhängigkeit' },
     'principles.vendor.desc': {
       en: 'LLM, storage, auth: all swappable. No single provider dependency. Your application survives any vendor decision.',
-      de: 'LLM, Storage, Auth: alles austauschbar. Keine Abhaengigkeit von einem Anbieter. Ihre Anwendung ueberlebt jede Anbieter-Entscheidung.'
+      de: 'LLM, Storage, Auth: alles austauschbar. Keine Abhängigkeit von einem Anbieter. Ihre Anwendung überlebt jede Anbieter-Entscheidung.'
     },
     'principles.deterministic': { en: 'Deterministic Foundation', de: 'Deterministisches Fundament' },
     'principles.deterministic.desc': {
       en: 'AI operates within deterministic rules. Schema-validated, event-sourced, ACID-backed. Predictable behavior, auditable outcomes.',
-      de: 'KI arbeitet innerhalb deterministischer Regeln. Schema-validiert, Event-Sourced, ACID-gestuetzt. Vorhersagbares Verhalten, auditierbare Ergebnisse.'
+      de: 'KI arbeitet innerhalb deterministischer Regeln. Schema-validiert, Event-Sourced, ACID-gestützt. Vorhersagbares Verhalten, auditierbare Ergebnisse.'
     },
 
     // Solutions
-    'solutions.title': { en: 'Solutions', de: 'Loesungen' },
+    'solutions.title': { en: 'Solutions', de: 'Lösungen' },
     'solutions.sub': {
       en: 'How organisations can use 3cors to bring AI into their business. Safely and on their own terms.',
-      de: 'Wie Unternehmen mit 3cors KI in ihr Geschaeft bringen koennen. Sicher und zu ihren eigenen Bedingungen.'
+      de: 'Wie Unternehmen mit 3cors KI in ihr Geschäft bringen können. Sicher und zu ihren eigenen Bedingungen.'
     },
     'solutions.1.title': { en: 'Intelligent Document Processing', de: 'Intelligente Dokumentenverarbeitung' },
     'solutions.1.desc': {
-      en: 'Turn unstructured information (contracts, manuals, reports) into structured, searchable knowledge. Ask questions in natural language and get relevant answers from your own data.',
-      de: 'Verwandeln Sie unstrukturierte Informationen (Vertraege, Handbuecher, Reports) in strukturiertes, durchsuchbares Wissen. Stellen Sie Fragen in natuerlicher Sprache und erhalten Sie relevante Antworten aus Ihren eigenen Daten.'
+      en: 'Turn unstructured information (contracts, manuals, reports) into structured, searchable knowledge. Ask questions in natural language and get relevant answers from your own data. Deterministic processing steps keep every result traceable and reproducible, and they bridge outages of individual AI components so the workflow stays reliable.',
+      de: 'Verwandeln Sie unstrukturierte Informationen (Verträge, Handbücher, Reports) in strukturiertes, durchsuchbares Wissen. Stellen Sie Fragen in natürlicher Sprache und erhalten Sie relevante Antworten aus Ihren eigenen Daten. Deterministische Verarbeitungsschritte halten jedes Ergebnis nachvollziehbar und reproduzierbar und überbrücken Ausfälle einzelner KI-Komponenten, damit der Ablauf zuverlässig bleibt.'
     },
     'solutions.1.benefit': {
       en: '<strong>Key benefit:</strong> Sensitive documents can remain on your own servers. No data needs to leave your organisation.',
-      de: '<strong>Kernvorteil:</strong> Sensible Dokumente koennen auf Ihren eigenen Servern bleiben. Keine Daten muessen Ihr Unternehmen verlassen.'
+      de: '<strong>Kernvorteil:</strong> Sensible Dokumente können auf Ihren eigenen Servern bleiben. Keine Daten müssen Ihr Unternehmen verlassen.'
     },
-    'solutions.2.title': { en: 'AI for Regulated Industries', de: 'KI fuer regulierte Branchen' },
+    'solutions.2.title': { en: 'AI for Regulated Industries', de: 'KI für regulierte Branchen' },
     'solutions.2.desc': {
       en: 'Finance, insurance, healthcare, and public sector organisations often cannot use cloud-based AI services. 3cors is designed to run on your own infrastructure, helping you meet regulatory requirements.',
-      de: 'Finanz-, Versicherungs-, Gesundheits- und oeffentliche Organisationen koennen oft keine cloudbasierten KI-Dienste nutzen. 3cors ist fuer den Betrieb auf Ihrer eigenen Infrastruktur konzipiert und hilft Ihnen, regulatorische Anforderungen zu erfuellen.'
+      de: 'Finanz-, Versicherungs-, Gesundheits- und öffentliche Organisationen können oft keine cloudbasierten KI-Dienste nutzen. 3cors ist für den Betrieb auf Ihrer eigenen Infrastruktur konzipiert und hilft Ihnen, regulatorische Anforderungen zu erfüllen.'
     },
     'solutions.2.benefit': {
       en: '<strong>Key benefit:</strong> Designed with European data protection regulations in mind. Full audit trails for every operation.',
-      de: '<strong>Kernvorteil:</strong> Entwickelt mit europaeischen Datenschutzvorschriften im Blick. Vollstaendige Audit-Trails fuer jede Operation.'
+      de: '<strong>Kernvorteil:</strong> Entwickelt mit europäischen Datenschutzvorschriften im Blick. Vollständige Audit-Trails für jede Operation.'
     },
     'solutions.3.title': { en: 'AI Cost Management', de: 'KI-Kostenmanagement' },
     'solutions.3.desc': {
       en: 'Many organisations struggle with unpredictable AI costs. 3cors provides built-in budget controls that help prevent unexpected charges, with clear reporting on what each task costs.',
-      de: 'Viele Unternehmen kaempfen mit unvorhersehbaren KI-Kosten. 3cors bietet eingebaute Budgetkontrollen, die unerwartete Kosten verhindern, mit klarem Reporting ueber die Kosten jeder Aufgabe.'
+      de: 'Viele Unternehmen kämpfen mit unvorhersehbaren KI-Kosten. 3cors bietet eingebaute Budgetkontrollen, die unerwartete Kosten verhindern, mit klarem Reporting über die Kosten jeder Aufgabe.'
     },
     'solutions.3.benefit': {
       en: '<strong>Key benefit:</strong> Set budget limits per team or project. Costs are reserved before each operation runs.',
@@ -132,24 +132,24 @@
     'solutions.4.title': { en: 'AI Evaluation & Prototyping', de: 'KI-Evaluation & Prototyping' },
     'solutions.4.desc': {
       en: 'Explore different AI approaches without committing to a single provider. Compare results, switch between providers at any time, and find the right fit for your use case.',
-      de: 'Erkunden Sie verschiedene KI-Ansaetze, ohne sich an einen Anbieter zu binden. Vergleichen Sie Ergebnisse, wechseln Sie jederzeit zwischen Anbietern und finden Sie die passende Loesung fuer Ihren Anwendungsfall.'
+      de: 'Erkunden Sie verschiedene KI-Ansätze, ohne sich an einen Anbieter zu binden. Vergleichen Sie Ergebnisse, wechseln Sie jederzeit zwischen Anbietern und finden Sie die passende Lösung für Ihren Anwendungsfall.'
     },
     'solutions.4.benefit': {
       en: '<strong>Key benefit:</strong> No long-term commitments. Switch or combine AI providers as your needs evolve.',
-      de: '<strong>Kernvorteil:</strong> Keine langfristigen Bindungen. Wechseln oder kombinieren Sie KI-Anbieter, wenn sich Ihre Anforderungen aendern.'
+      de: '<strong>Kernvorteil:</strong> Keine langfristigen Bindungen. Wechseln oder kombinieren Sie KI-Anbieter, wenn sich Ihre Anforderungen ändern.'
     },
-    'solutions.5.title': { en: 'AI Backend for Software Providers', de: 'KI-Backend fuer Softwareanbieter' },
+    'solutions.5.title': { en: 'AI Backend for Software Providers', de: 'KI-Backend für Softwareanbieter' },
     'solutions.5.desc': {
       en: 'Software companies looking to add AI capabilities to their products can use 3cors as a backend layer. It handles user management, billing, and AI integration so they can focus on their core product.',
-      de: 'Softwareunternehmen, die KI-Faehigkeiten in ihre Produkte integrieren moechten, koennen 3cors als Backend nutzen. Es uebernimmt Benutzerverwaltung, Billing und KI-Integration, damit sie sich auf ihr Kernprodukt konzentrieren koennen.'
+      de: 'Softwareunternehmen, die KI-Fähigkeiten in ihre Produkte integrieren möchten, können 3cors als Backend nutzen. Es übernimmt Benutzerverwaltung, Billing und KI-Integration, damit sie sich auf ihr Kernprodukt konzentrieren können.'
     },
     'solutions.5.benefit': {
       en: '<strong>Key benefit:</strong> Core infrastructure is ready to use, allowing faster time to market for AI-powered features.',
-      de: '<strong>Kernvorteil:</strong> Die Kerninfrastruktur ist einsatzbereit und ermoeglichst eine schnellere Time-to-Market fuer KI-gestuetzte Features.'
+      de: '<strong>Kernvorteil:</strong> Die Kerninfrastruktur ist einsatzbereit und ermöglicht eine schnellere Time-to-Market für KI-gestützte Features.'
     },
     'solutions.cta': {
       en: 'Every organisation has different needs. <a href="#contact">Get in touch</a> to discuss how 3cors can support your specific requirements.',
-      de: 'Jedes Unternehmen hat andere Anforderungen. <a href="#contact">Kontaktieren Sie uns</a>, um zu besprechen, wie 3cors Ihre spezifischen Anforderungen unterstuetzen kann.'
+      de: 'Jedes Unternehmen hat andere Anforderungen. <a href="#contact">Kontaktieren Sie uns</a>, um zu besprechen, wie 3cors Ihre spezifischen Anforderungen unterstützen kann.'
     },
 
     // Contact
