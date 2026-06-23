@@ -164,6 +164,16 @@
   };
 
   function getLang() {
+    try {
+      var p = new URLSearchParams(window.location.search).get('lang');
+      if (p) {
+        var pl = p.toLowerCase().slice(0, 2);
+        if (pl === 'de' || pl === 'en') {
+          localStorage.setItem('3cors-lang', pl);
+          return pl;
+        }
+      }
+    } catch (e) {}
     var stored = localStorage.getItem('3cors-lang');
     if (stored) return stored;
     var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
