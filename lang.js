@@ -72,6 +72,7 @@
       en: 'Built entirely on proven open-source technology. No proprietary black boxes in the stack. Vendor-independent by design.',
       de: 'Vollständig auf bewährter Open-Source-Technologie gebaut. Keine proprietären Black Boxes im Stack. Herstellerunabhängig by Design.'
     },
+    'platform.demo.cta': { en: 'Try the Live Demo', de: 'Live-Demo testen' },
 
     // Principles
     'principles.title': { en: 'Principles', de: 'Prinzipien' },
