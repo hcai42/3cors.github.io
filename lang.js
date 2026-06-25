@@ -73,6 +73,7 @@
       de: 'Vollständig auf bewährter Open-Source-Technologie gebaut. Keine proprietären Black Boxes im Stack. Herstellerunabhängig by Design.'
     },
     'platform.demo.cta': { en: 'Try the Live Demo', de: 'Live-Demo testen' },
+    'platform.demo.note': { en: 'A login is required to access the demo environment.', de: 'Für den Zugang zur Demo-Umgebung ist ein Login erforderlich.' },
 
     // Principles
     'principles.title': { en: 'Principles', de: 'Prinzipien' },
