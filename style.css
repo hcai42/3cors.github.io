@@ -217,6 +217,10 @@ body {
   flex-wrap: wrap;
 }
 
+.platform-cta {
+  margin-top: 44px;
+}
+
 /* === Buttons === */
 .btn {
   display: inline-block;
