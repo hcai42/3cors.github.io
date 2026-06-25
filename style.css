@@ -218,7 +218,14 @@ body {
 }
 
 .platform-cta {
-  margin-top: 44px;
+  margin-top: 64px;
+}
+
+.platform-demo-note {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 /* === Buttons === */
