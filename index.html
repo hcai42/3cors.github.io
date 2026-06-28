@@ -31,6 +31,7 @@
         <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
         <a href="#platform" data-i18n="nav.platform">Platform</a>
         <a href="#principles" data-i18n="nav.principles">Principles</a>
+        <a href="#process" data-i18n="nav.process">How It Works</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
         <button id="lang-toggle" class="lang-toggle">DE</button>
       </div>
@@ -53,6 +54,30 @@
       <div class="hero-actions">
         <a href="#cores" class="btn btn-primary" data-i18n="hero.cta1">Explore the Framework</a>
         <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section class="metrics-band">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-num">100+</div>
+          <div class="metric-label" data-i18n="metrics.providers">LLM providers, freely swappable</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">100%</div>
+          <div class="metric-label" data-i18n="metrics.audit">Audit coverage on admin actions</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">0</div>
+          <div class="metric-label" data-i18n="metrics.lockin">Vendor lock-in, by design</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">100%</div>
+          <div class="metric-label" data-i18n="metrics.selfhosted">Self-hosted on your own infrastructure</div>
+        </div>
       </div>
     </div>
   </section>
@@ -217,8 +242,33 @@
     </div>
   </section>
 
+  <!-- How It Works -->
+  <section id="process" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="process.title">How We Work Together</h2>
+      <p class="section-sub" data-i18n="process.sub">From first conversation to a platform you run yourself. Three clear steps, no lock-in along the way.</p>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3 data-i18n="process.1.title">Use-Case Conversation</h3>
+          <p data-i18n="process.1.desc">We map your use case, data, and requirements together. Honest assessment of fit, no obligation.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3 data-i18n="process.2.title">Pilot on Your Infrastructure</h3>
+          <p data-i18n="process.2.desc">3cors is deployed via Docker Compose on your environment. You test with real data, and your data stays with you the entire time.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3 data-i18n="process.3.title">Run It and Own It</h3>
+          <p data-i18n="process.3.desc">You operate the platform yourself, swap providers anytime, and keep full control of cost and data. We support you as you scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section-alt">
     <div class="container contact-section">
       <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
       <p class="section-sub" data-i18n="contact.sub">Interested in 3cors? We're looking for early adopters and partners.</p>
@@ -280,6 +330,28 @@
       new MutationObserver(function() {
         langBtnMobile.textContent = langBtn.textContent;
       }).observe(langBtn, { childList: true });
+    }
+
+    // Scroll reveal: subtle, staggered, accessible.
+    // Applied only via JS so no-JS and reduced-motion users always see content.
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced && 'IntersectionObserver' in window) {
+      var revealEls = document.querySelectorAll('.section-title, .section-sub, .metric, .card, .feature, .principle, .solution-card, .process-step');
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(function(el) {
+        el.classList.add('reveal');
+        var siblings = Array.prototype.slice.call(el.parentNode.children);
+        var idx = siblings.indexOf(el);
+        el.style.transitionDelay = (Math.min(idx, 5) * 70) + 'ms';
+        io.observe(el);
+      });
     }
   </script>
 </body>
