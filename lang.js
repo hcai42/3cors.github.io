@@ -6,6 +6,7 @@
     'nav.solutions': { en: 'Solutions', de: 'Lösungen' },
     'nav.platform': { en: 'Platform', de: 'Plattform' },
     'nav.principles': { en: 'Principles', de: 'Prinzipien' },
+    'nav.process': { en: 'How It Works', de: 'Zusammenarbeit' },
     'nav.contact': { en: 'Contact', de: 'Kontakt' },
 
     // Hero
@@ -17,6 +18,12 @@
     },
     'hero.cta1': { en: 'Explore the Framework', de: 'Framework entdecken' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
+
+    // Metrics
+    'metrics.providers': { en: 'LLM providers, freely swappable', de: 'LLM-Anbieter, frei austauschbar' },
+    'metrics.audit': { en: 'Audit coverage on admin actions', de: 'Audit-Abdeckung bei Admin-Aktionen' },
+    'metrics.lockin': { en: 'Vendor lock-in, by design', de: 'Vendor Lock-in, by Design' },
+    'metrics.selfhosted': { en: 'Self-hosted on your own infrastructure', de: 'Self-Hosted auf Ihrer eigenen Infrastruktur' },
 
     // Three Cores
     'cores.title': { en: 'Three Cores', de: 'Drei Kerne' },
@@ -152,6 +159,28 @@
     'solutions.cta': {
       en: 'Every organisation has different needs. <a href="#contact">Get in touch</a> to discuss how 3cors can support your specific requirements.',
       de: 'Jedes Unternehmen hat andere Anforderungen. <a href="#contact">Kontaktieren Sie uns</a>, um zu besprechen, wie 3cors Ihre spezifischen Anforderungen unterstützen kann.'
+    },
+
+    // How It Works
+    'process.title': { en: 'How We Work Together', de: 'So arbeiten wir zusammen' },
+    'process.sub': {
+      en: 'From first conversation to a platform you run yourself. Three clear steps, no lock-in along the way.',
+      de: 'Vom ersten Gespräch bis zur Plattform, die Sie selbst betreiben. Drei klare Schritte, ohne Lock-in auf dem Weg.'
+    },
+    'process.1.title': { en: 'Use-Case Conversation', de: 'Use-Case-Gespräch' },
+    'process.1.desc': {
+      en: 'We map your use case, data, and requirements together. Honest assessment of fit, no obligation.',
+      de: 'Wir klären gemeinsam Ihren Anwendungsfall, Ihre Daten und Anforderungen. Ehrliche Einschätzung, unverbindlich.'
+    },
+    'process.2.title': { en: 'Pilot on Your Infrastructure', de: 'Pilot auf Ihrer Infrastruktur' },
+    'process.2.desc': {
+      en: '3cors is deployed via Docker Compose on your environment. You test with real data, and your data stays with you the entire time.',
+      de: '3cors wird via Docker Compose auf Ihrer Umgebung deployed. Sie testen mit echten Daten, und Ihre Daten bleiben durchgehend bei Ihnen.'
+    },
+    'process.3.title': { en: 'Run It and Own It', de: 'Betreiben und besitzen' },
+    'process.3.desc': {
+      en: 'You operate the platform yourself, swap providers anytime, and keep full control of cost and data. We support you as you scale.',
+      de: 'Sie betreiben die Plattform selbst, wechseln Anbieter jederzeit und behalten volle Kontrolle über Kosten und Daten. Wir unterstützen Sie beim Skalieren.'
     },
 
     // Contact
