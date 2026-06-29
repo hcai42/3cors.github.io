@@ -21,9 +21,9 @@
 
     // Metrics
     'metrics.providers': { en: 'LLM providers, freely swappable', de: 'LLM-Anbieter, frei austauschbar' },
-    'metrics.audit': { en: 'Audit coverage on admin actions', de: 'Audit-Abdeckung bei Admin-Aktionen' },
+    'metrics.audit': { en: 'Admin actions are logged and traceable', de: 'Admin-Aktionen werden protokolliert und sind nachvollziehbar' },
     'metrics.lockin': { en: 'Vendor lock-in, by design', de: 'Vendor Lock-in, by Design' },
-    'metrics.selfhosted': { en: 'Self-hosted on your own infrastructure', de: 'Self-Hosted auf Ihrer eigenen Infrastruktur' },
+    'metrics.cost': { en: 'One central place for all AI costs, across providers and teams', de: 'Eine zentrale Stelle für alle KI-Kosten, über Anbieter und Teams hinweg' },
 
     // Three Cores
     'cores.title': { en: 'Three Cores', de: 'Drei Kerne' },
