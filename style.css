@@ -750,3 +750,28 @@ body {
     max-width: 100%;
   }
 }
+
+/* Explainer video */
+.explainer-frame {
+  max-width: 880px;
+  margin: 2rem auto 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--glow);
+  background: #000;
+}
+
+.explainer-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.explainer-note {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
