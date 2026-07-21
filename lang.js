@@ -20,8 +20,8 @@
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
 
     // Explainer
-    'explainer.title': { en: 'See 3cors in 25 seconds', de: '3cors in 25 Sekunden' },
-    'explainer.sub': { en: 'A 25-second look at how 3cors keeps AI under your control.', de: 'Ein 25-Sekunden-Überblick, wie 3cors KI unter Kontrolle hält.' },
+    'explainer.title': { en: 'See 3cors in under a minute', de: '3cors in unter einer Minute' },
+    'explainer.sub': { en: 'A short look at how 3cors keeps AI under your control.', de: 'Ein kurzer Blick, wie 3cors KI unter Kontrolle hält.' },
     'explainer.note': { en: 'Video in English. Subtitles available in the player.', de: 'Video in englischer Sprache. Deutsche Untertitel sind im Player verfügbar.' },
 
     // Metrics
