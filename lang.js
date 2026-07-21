@@ -22,7 +22,7 @@
     // Explainer
     'explainer.title': { en: 'See 3cors in under a minute', de: '3cors in unter einer Minute' },
     'explainer.sub': { en: 'A short look at how 3cors keeps AI under your control.', de: 'Ein kurzer Blick, wie 3cors KI unter Kontrolle hält.' },
-    'explainer.note': { en: 'Video in English. Subtitles available in the player.', de: 'Video in englischer Sprache. Deutsche Untertitel sind im Player verfügbar.' },
+    'explainer.note': { en: 'Video in English.', de: 'Video in englischer Sprache.' },
 
     // Metrics
     'metrics.providers': { en: 'LLM providers, freely swappable', de: 'LLM-Anbieter, frei austauschbar' },
@@ -228,15 +228,6 @@
     // Update toggle button text
     var btn = document.getElementById('lang-toggle');
     if (btn) btn.textContent = lang === 'de' ? 'EN' : 'DE';
-
-    // Sync explainer video subtitles to the site language
-    var vid = document.getElementById('explainer-video');
-    if (vid && vid.textTracks) {
-      for (var i = 0; i < vid.textTracks.length; i++) {
-        var tr = vid.textTracks[i];
-        tr.mode = (tr.language === lang) ? 'showing' : 'disabled';
-      }
-    }
   }
 
   // Init on DOM ready
