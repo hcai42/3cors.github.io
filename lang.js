@@ -1,6 +1,35 @@
 // 3cors i18n - browser language detection + toggle
 (function() {
   var t = {
+    // Sales story 2026-11-25
+    'scen.title': { en: 'Example scenarios', de: 'Beispielszenarien' },
+    'scen.sub': { en: 'Always the same pattern: the business describes, the team works together, costs stay within limits, and the change ships without a release queue.', de: 'Immer derselbe Ablauf: Der Fachbereich beschreibt, das Team arbeitet gemeinsam, die Kosten bleiben im Rahmen, die Änderung kommt ohne Release-Warteschlange.' },
+    'scen.a.label': { en: 'Example scenario · Insurance', de: 'Beispielszenario · Versicherung' },
+    'scen.a.quote': { en: '"Our core system ships two releases a year."', de: '„Unser Kernsystem hat zwei Releases im Jahr.“' },
+    'scen.a.body': { en: 'The claims team wants to handle a new claim type faster. Claims handlers and the team lead describe the process in a guided interview; handlers propose changes, the lead approves. The new flow runs alongside the core system, which stays untouched. If the assessor service changes later or the AI provider goes down, rules and data stay; only the connection is switched.', de: 'Die Schadenabteilung will eine neue Schadenart schneller bearbeiten. Sachbearbeitung und Fachleitung beschreiben die Meldestrecke im geführten Interview; die Sachbearbeitung schlägt Änderungen vor, die Fachleitung gibt frei. Die neue Strecke läuft neben dem Kernsystem, das unverändert bleibt. Wechselt später der Gutachterdienst oder fällt der KI-Anbieter aus, bleiben Prüfregeln und Daten, umgestellt wird nur die Anbindung.' },
+    'scen.a.tags': { en: '<span class="usp-tag usp-team">Together in one workspace</span> <span class="usp-tag usp-free">No lock-in</span> <span class="usp-tag usp-cost">Costs within limits</span> <span class="usp-tag usp-data">Your data stays yours</span>', de: '<span class="usp-tag usp-team">Gemeinsam im Workspace</span> <span class="usp-tag usp-free">Kein Lock-in</span> <span class="usp-tag usp-cost">Kosten im Rahmen</span> <span class="usp-tag usp-data">Ihre Daten bleiben Ihre</span>' },
+    'scen.b.label': { en: 'Example scenario · Property management', de: 'Beispielszenario · Hausverwaltung' },
+    'scen.b.quote': { en: '"Every small change means a quote from our software vendor."', de: '„Jede kleine Anpassung ist ein Angebot vom Softwarehersteller.“' },
+    'scen.b.body': { en: 'Defect reports arrive by email, phone and paper notes. Property managers, accounting and contractor dispatch agree on report types and who decides. AI routes the reports; people decide. The team adds new report types itself; if a contractor closes down, only the routing changes.', de: 'Mängel kommen per Mail, Telefon und Zettel. Objektbetreuung, Buchhaltung und Handwerker-Disposition legen gemeinsam fest, welche Meldearten es gibt und wer entscheidet. Die KI ordnet Meldungen zu, entscheiden tun Menschen. Neue Meldearten legt der Fachbereich selbst an; hört ein Handwerksbetrieb auf, wird nur die Zuordnung angepasst.' },
+    'scen.b.tags': { en: '<span class="usp-tag usp-team">Together in one workspace</span> <span class="usp-tag usp-cost">Costs within limits</span> <span class="usp-tag usp-free">No lock-in</span>', de: '<span class="usp-tag usp-team">Gemeinsam im Workspace</span> <span class="usp-tag usp-cost">Kosten im Rahmen</span> <span class="usp-tag usp-free">Kein Lock-in</span>' },
+    'scen.c.label': { en: 'Example scenario · Plant engineering', de: 'Beispielszenario · Anlagenbau' },
+    'scen.c.quote': { en: '"When Mr M. is on holiday, no quote goes out."', de: '„Wenn Herr M. im Urlaub ist, geht kein Angebot raus.“' },
+    'scen.c.body': { en: 'Quotes with engineering content depend on a few people. Sales, engineering and installation planning capture rules and experience together. AI drafts the quote and shows what it relies on; engineering reviews and approves. If a supplier discontinues a material, the alternative is recorded once and applies to all future drafts.', de: 'Angebote mit Engineering-Anteil hängen am Wissen weniger Köpfe. Vertrieb, Engineering und Montageplanung legen Regeln und Erfahrungswerte gemeinsam ab. Die KI erstellt einen Angebotsentwurf und zeigt, worauf er sich stützt; das Engineering prüft und gibt frei. Stellt ein Zulieferer einen Werkstoff ein, wird die Alternative einmal hinterlegt und gilt für alle künftigen Entwürfe.' },
+    'scen.c.tags': { en: '<span class="usp-tag usp-team">Together in one workspace</span> <span class="usp-tag usp-cost">Costs within limits</span> <span class="usp-tag usp-data">Your data stays yours</span>', de: '<span class="usp-tag usp-team">Gemeinsam im Workspace</span> <span class="usp-tag usp-cost">Kosten im Rahmen</span> <span class="usp-tag usp-data">Ihre Daten bleiben Ihre</span>' },
+    'change.title': { en: 'Partners change. Your business keeps running.', de: 'Partner wechseln. Ihr Geschäft läuft weiter.' },
+    'change.desc': { en: 'An AI provider goes down, a supplier discontinues a product, a service partner ends the contract. Your processes, rules and experience belong to you, not to the partner. You replace the partner; your team\'s know-how stays. Switching AI providers is a configuration change.', de: 'Ein KI-Anbieter fällt aus, ein Lieferant stellt ein Produkt ein, ein Dienstleister kündigt den Vertrag. Ihre Abläufe, Regeln und Erfahrungswerte gehören Ihnen, nicht dem Partner. Sie tauschen den Partner aus, das Wissen Ihres Fachbereichs bleibt. Den KI-Anbieter wechseln Sie per Konfiguration.' },
+    'change.tags': { en: '<span class="usp-tag usp-free">No lock-in</span> <span class="usp-tag usp-data">Your data stays yours</span>', de: '<span class="usp-tag usp-free">Kein Lock-in</span> <span class="usp-tag usp-data">Ihre Daten bleiben Ihre</span>' },
+    'teaser.text': { en: 'In conversation and projects with: a tour operator, an insurance IT service provider, a plant engineering company, an online education entrepreneur.', de: 'Im Gespräch und in Projekten mit: einem Reiseveranstalter, einem IT-Dienstleister für Versicherungen, einem Anlagenbauer, einer Online-Bildungsunternehmerin.' },
+    'need.title': { en: 'From need to application', de: 'Vom Bedarf zur Anwendung' },
+    'need.sub': { en: 'The framework that lets business teams evolve their own software instead of waiting for vendors or release cycles.', de: 'Das Framework, mit dem Fachbereiche ihre Software selbst weiterentwickeln, statt auf Dienstleister oder Release-Zyklen zu warten.' },
+    'need.1.title': { en: 'The business describes', de: 'Der Fachbereich beschreibt' },
+    'need.1.desc': { en: 'In a guided interview, in its own language. Industry packs bring vocabulary and starter models.', de: 'Im geführten Interview, in seiner Sprache. Branchenpakete bringen Fachbegriffe und Startmodelle mit.' },
+    'need.2.title': { en: '3cors builds', de: '3cors baut' },
+    'need.2.desc': { en: 'AI agents implement, test and document, traceable step by step.', de: 'KI-Agenten setzen um, testen und dokumentieren, nachvollziehbar Schritt für Schritt.' },
+    'need.3.title': { en: 'A person approves', de: 'Ein Mensch gibt frei' },
+    'need.3.desc': { en: 'Roles in the workspace define who changes and who approves.', de: 'Wer ändert und wer freigibt, regeln Rollen im Workspace.' },
+    'need.bridge': { en: 'Rollout and guidance by <a href="https://www.hcai42.com">hcai42</a>.', de: 'Einführung und Begleitung durch <a href="https://www.hcai42.com">hcai42</a>.' },
+
     // Nav
     'nav.cores': { en: 'Three Cores', de: 'Drei Kerne' },
     'nav.solutions': { en: 'Solutions', de: 'Lösungen' },
@@ -12,10 +41,7 @@
     // Hero
     'hero.badge': { en: 'Built on Open Source \u00b7 Self-Hosted \u00b7 GDPR-Ready', de: 'Basiert auf Open Source \u00b7 Self-Hosted \u00b7 DSGVO-konform' },
     'hero.title': { en: 'You Own It.', de: 'Du bestimmst.' },
-    'hero.sub': {
-      en: 'An AI platform built entirely on open-source technology.<br>Three Cores. Full sovereignty. Zero lock-in.',
-      de: 'Eine KI-Plattform, vollständig auf Open-Source-Technologie gebaut.<br>Drei Kerne. Volle Souveränität. Kein Lock-in.'
-    },
+    'hero.sub': { en: 'The framework that lets business teams evolve their own software.<br>With AI, in-house, without lock-in.', de: 'Das Framework, mit dem Fachbereiche ihre Software selbst weiterentwickeln.<br>Mit KI, im eigenen Haus, ohne Lock-in.' },
     'hero.cta1': { en: 'Explore the Framework', de: 'Framework entdecken' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
 
